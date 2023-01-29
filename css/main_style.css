@@ -227,7 +227,9 @@ body {
   text-align: center;
 }
 
-.counter-box svg {
+.counter-box i {
+  font-size: 3em;
+  margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.9);
   font-weight: bold;
 }
