@@ -129,10 +129,37 @@ body {
   box-shadow: none;
   z-index: 9999;
   transition: all 0.3s ease-in-out;
+  font-family: "Varela Round" !important;
+}
+
+.navbar .sidenav {
+  background: #222;
+  z-index: 9999;
+}
+
+.active {
+  background: #b20030;
+  border-radius: 0 0 2px 2px;
+  height: 8px;
+  font-weight: bolder;
+}
+
+.navbar .sidenav li > a {
+  margin: 1em 0;
+  padding: 0 20px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .sidenav li > a > i {
+  margin-right: 20px;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
 }
 
 .navactive {
-  background: rgba(0, 0, 0, 0.45) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   position: fixed;
 }
 
@@ -225,6 +252,10 @@ body {
 .counter-box {
   box-sizing: border-box;
   text-align: center;
+  border-radius: 20px;
+  padding: 1.5em;
+  background: #b20030;
+  box-shadow: inset 5px 5px 10px #9b002a, inset -5px -5px 10px #c90036;
 }
 
 .counter-box i {
@@ -497,23 +528,38 @@ body {
 }
 
 .social-section .social-info-btn {
+  padding: 2.5em;
   text-align: center;
+  background: #b20030;
+  width: 100%;
 }
 
-.social-section .social-info-btn .btn-large {
+.social-section .social-info-btn .social-btn {
   border-radius: 15px;
-  background: #222;
   margin: 1em;
-  transition: all 0.2s ease-in-out;
+  padding: 1.7em;
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+  background: #b20030;
+  box-shadow: 7px 7px 17px #990029, -7px -7px 17px #cb0037;
 }
 
-.social-section .social-info-btn .btn-large i {
+.social-section .social-info-btn .social-btn i {
+  color: rgba(255, 255, 255, 1);
   font-size: 3rem;
   display: block;
+  transition: all 0.1s ease-out;
 }
 
-.social-section .social-info-btn .btn-large:hover {
-  transform: scale(1.2);
+.social-section .social-info-btn .social-btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  background: #b20030;
+  box-shadow: inset 5px 5px 10px #9b002a, inset -5px -5px 10px #c90036;
+}
+
+.social-section .social-info-btn .social-btn:hover i {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .footer-section .page-footer {

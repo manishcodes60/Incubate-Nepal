@@ -53,6 +53,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <link rel="stylesheet" href="css/main_style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
     <!-- icons -->
     <link
@@ -71,9 +72,9 @@
         <div class="navbar">
           <nav>
             <div class="nav-wrapper">
-              <!-- <a href="#!" class="brand-logo">Logo</a> -->
+              <a href="#!" class="brand-logo">Incubate Nepal</a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-                ><i data-feather="menu"></i
+                ><i class="las la-bars"></i
               ></a>
               <ul class="hide-on-med-and-down">
                 <li><a href="#home">Home</a></li>
@@ -86,14 +87,36 @@
             </div>
           </nav>
 
-          <ul class="sidenav" id="mobile-demo">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#team">Team</a></li>
+          <ul class="sidenav sidenav-close" id="mobile-demo">
             <li>
-              <a href="#faq">FAQs</a>
+              <a href="#home" class="waves-effect"
+                ><i class="las la-home"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="waves-effect"
+                ><i class="las la-info-circle"></i> About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="waves-effect"
+                ><i class="las la-project-diagram"></i> Projects</a
+              >
+            </li>
+            <li>
+              <a href="#" class="waves-effect"
+                ><i class="las la-quote-right"></i> Testimonials</a
+              >
+            </li>
+            <li>
+              <a href="#team" class="waves-effect"
+                ><i class="las la-users"></i> Team</a
+              >
+            </li>
+            <li>
+              <a href="#faq" class="waves-effect"
+                ><i class="las la-question-circle"></i> FAQs</a
+              >
             </li>
           </ul>
         </div>
@@ -885,19 +908,22 @@
         <div class="title-design-shape"></div>
       </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="social-info-btn">
-            <a class="waves-effect waves-light btn-large"
+      <div class="row">
+        <div class="social-info-btn">
+          <div class="container">
+            <a class="waves-effect waves-light social-btn"
               ><i class="lab la-linkedin-in"></i
             ></a>
 
-            <a class="waves-effect waves-light btn-large"
+            <a class="waves-effect waves-light social-btn"
               ><i class="lab la-instagram"></i
             ></a>
 
-            <a class="waves-effect waves-light btn-large"
+            <a class="waves-effect waves-light social-btn"
               ><i class="lab la-facebook-f"></i
+            ></a>
+            <a class="waves-effect waves-light social-btn"
+              ><i class="las la-envelope"></i
             ></a>
           </div>
         </div>
