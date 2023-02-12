@@ -38,11 +38,13 @@
     margin: 1em 0;
   }
 
-  .team-section .row {
+  .team-section .row,
+  .project-section .row {
     margin-bottom: 0;
   }
 
-  .team-section .team-card {
+  .team-section .team-card,
+  .project-section .project-card {
     margin: 1.5em 0;
   }
 
