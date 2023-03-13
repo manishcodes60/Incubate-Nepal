@@ -212,7 +212,7 @@ body {
   letter-spacing: 0.1em;
 }
 
-.home-section .home-background .home-info .home-info-btn a {
+.home-section .home-background .home-info .home-info-btn a, .application-section .application-section-btn a {
   margin: 0.5rem 1.2rem;
   border-radius: 5px;
   text-transform: none;
@@ -288,6 +288,10 @@ body {
   width: 100%;
 }
 
+.application-section .row{
+  margin-bottom: 0;
+}
+
 .application-section .application-background {
   width: 100%;
   height: 100%;
@@ -325,10 +329,16 @@ body {
   text-align: center;
 }
 
-.application-section .application-background .application-section-info h1 {
+.application-section .application-background .application-section-info h1,
+.application-section .application-background .application-section-info h3
+{
   color: rgba(255, 255, 255, 0.9);
   font-size: 2.5rem;
   font-family: "Varela Round";
+}
+
+.application-section .application-background .application-section-info h3{
+  font-size: 1.5rem;
 }
 
 .team-section,
