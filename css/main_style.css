@@ -562,6 +562,28 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+.sponsor-section .sponsor-card{
+  background: #fafafac4;
+  border-radius: 20px;
+  padding: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.sponsor-section .sponsor-card .sponsor-card-img{
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
+.sponsor-section .sponsor-card .sponsor-card-img img{
+  width: 100%;
+}
+
+.sponsor-section .sponsor-card:hover{
+  transform: scale(1.1);
+}
+
 .social-section .social-info-btn,
 .project-section .project-info-btn {
   padding: 2.5em;
