@@ -201,27 +201,47 @@
       </div>
 
       <div class="counter-section">
-        <div class="counter">
+        <div class="counter-row">
           <div class="row center">
             <div class="col l4 s12">
-              <div class="counter-box">
+              <div class="counter-box" id="counters_1">
                 <i class="las la-map-marker"></i>
                 <span class="count-title">Cities Reached</span>
-                <span class="count-num">15</span>
+                <div
+                  class="counter count-num"
+                  data-TargetNum="15"
+                  data-Speed="2000"
+                >
+                  0
+                </div>
               </div>
             </div>
             <div class="col l4 s12">
-              <div class="counter-box">
+              <div class="counter-box" id="counters_2">
                 <i class="las la-users"></i>
                 <span class="count-title">Student Connected</span>
-                <span class="count-num">97</span>
+
+                <div
+                  class="counter count-num"
+                  data-TargetNum="97"
+                  data-Speed="2000"
+                >
+                  0
+                </div>
               </div>
             </div>
             <div class="col l4 s12">
-              <div class="counter-box">
+              <div class="counter-box" id="counters_3">
                 <i class="las la-project-diagram"></i>
                 <span class="count-title">Total Projects</span>
-                <span class="count-num">18</span>
+
+                <div
+                  class="counter count-num"
+                  data-TargetNum="18"
+                  data-Speed="2000"
+                >
+                  0
+                </div>
               </div>
             </div>
           </div>
@@ -1614,16 +1634,21 @@
       </footer>
     </div>
     <!-- scripts -->
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
       integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
       crossorigin="anonymous"
     ></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
-    <script src="js/jquery.rcounter.js"></script>
+    <script type="text/javascript" src="js/multi-animated-counter.js"></script>
+    <!-- <script src="js/jquery.rcounter.js"></script> -->
 
     <script>
       // navbar
@@ -1646,11 +1671,11 @@
       });
 
       // counter
-      $(function () {
+      /*$(function () {
         $(".count-num").rCounter({
           duration: 30,
         });
-      });
+      });*/
 
       // modal
       $(document).ready(function () {
